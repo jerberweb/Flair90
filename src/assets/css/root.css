@@ -69,7 +69,7 @@
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
     font-family: Quattrocento, serif;
     width: 100%;
-    padding: 0.5rem 1.25rem;
+    padding: 0.75rem 1.25rem;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     background-color: var(--navbackground);
@@ -145,7 +145,7 @@
     fill: #000000;
   }
   #cs-navigation .cs-logo svg {
-    min-width: clamp(5rem, 3.2353rem + 7.8431vw, 7rem);
+    min-width: clamp(5rem, 3.2353rem + 7.8431vw, 6.5rem);
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
   }
@@ -230,7 +230,7 @@
     opacity: 0;
     overflow: hidden;
     position: absolute;
-    top: 100%;
+    top: 98%;
     left: 0;
     z-index: -1;
     transform: scaleY(0);
