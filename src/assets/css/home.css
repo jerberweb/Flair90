@@ -143,6 +143,7 @@
     display: inline-block;
     position: relative;
     z-index: 1;
+    border-radius: var(--buttonRadius);
   }
   #hero-227 .cs-button-solid:before {
     content: "";
@@ -405,6 +406,7 @@
   #sbs-1099 .cs-text {
     margin-bottom: 1rem;
     line-height: 1.5em;
+    color: var(--bodyTextColorWhite);
   }
   #sbs-1099 .cs-text:last-of-type {
     margin-bottom: 2rem;
@@ -501,6 +503,412 @@
   #sbs-1099 .cs-image-group {
     font-size: min(1.2vw, 1em);
     flex: none;
+  }
+}
+/*-- -------------------------- -->
+<---            Blog            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #blog-985 {
+    padding: var(--sectionPadding);
+    background-color: #ffea00;
+    background-image: url("https://www.transparenttextures.com/patterns/grunge-wall.png");
+  }
+  #blog-985 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #blog-985 .cs-content {
+    font-family: var(--bodyFont);
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #blog-985 .cs-topper {
+    color: rgba(235, 235, 235, 0.926);
+    background: black;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    width: fit-content;
+    line-height: normal;
+    font-family: var(--topperFont);
+  }
+  #blog-985 .cs-title {
+    font-style: italic;
+    text-align: left;
+    width: 100%;
+    max-width: none;
+    position: relative;
+    color: black;
+    font-weight: 900;
+    margin-bottom: 0;
+  }
+  #blog-985 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 2rem;
+    background-color: black;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    border-radius: var(--buttonRadius);
+  }
+  #blog-985 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #blog-985 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #blog-985 .cs-button-solid {
+    /* prevents flexbox from squishing it */
+    flex: none;
+    font-family: var(--topperFont);
+  }
+  #blog-985 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* 16px - 20px */
+    gap: clamp(1rem, 2vw, 1.25rem);
+    position: relative;
+  }
+  #blog-985 .cs-item {
+    font-family: var(--bodyFont);
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+  #blog-985 .cs-item:hover {
+    cursor: pointer;
+  }
+  #blog-985 .cs-item:hover .cs-info:before {
+    opacity: 1;
+    background-color: var(--primary);
+  }
+  #blog-985 .cs-item:hover .cs-picture img {
+    transform: scale(1.15);
+  }
+  #blog-985 .cs-item:hover .cs-date {
+    color: #fff;
+  }
+  #blog-985 .cs-item:hover .cs-icon {
+    filter: brightness(150%);
+  }
+  #blog-985 .cs-item:hover .cs-link {
+    color: #fff;
+  }
+  #blog-985 .cs-picture {
+    width: 100%;
+    height: 30rem;
+    /* removed at tablet */
+    aspect-ratio: 0.68333333;
+    /* clips img tag from overflowing it on hover */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.34);
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.34);
+  }
+  #blog-985 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* makes sure the top of the image is at the top of the parent, heads won't get cut off this way */
+    object-position: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform 0.9s;
+  }
+  #blog-985 .cs-info {
+    width: 83%;
+    max-width: 26.25rem;
+    /* 16px - 24px */
+    padding: clamp(1rem, 2vw, 1.5rem);
+    /* prevents padding from affecting the height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+  }
+  #blog-985 .cs-info:before {
+    /* background-color */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #1a1a1a;
+    opacity: 0.8;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: background-color 0.3s, opacity 0.3s;
+    border-radius: 0.5rem;
+  }
+  #blog-985 .cs-date {
+    font-size: 1rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 1.25rem 0;
+    color: #bababa;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s;
+  }
+  #blog-985 .cs-icon {
+    width: 1.25rem;
+    height: auto;
+    transition: filter 0.3s;
+  }
+  #blog-985 .cs-h3 {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 0.75rem 0;
+    color: #fff;
+    display: block;
+  }
+  #blog-985 .cs-desc {
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin: 0 0 1.25rem 0;
+    color: #f7f7f7;
+    display: block;
+  }
+  #blog-985 .cs-link {
+    font-size: 1rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    text-decoration: none;
+    width: auto;
+    margin: 0;
+    color: var(--primary);
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s;
+  }
+  #blog-985 .cs-link:hover {
+    color: #fff;
+  }
+  #blog-985 .cs-link:before {
+    /* underline */
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    transition: background-color 0.3s;
+  }
+}
+/* Tablet - 550px */
+@media only screen and (min-width: 34.375rem) {
+  #blog-985 .cs-content {
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 3rem;
+  }
+  #blog-985 .cs-title {
+    margin: 0;
+  }
+  #blog-985 .cs-picture {
+    /* remove the aspect ratio so the height can be squished */
+    aspect-ratio: initial;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #blog-985 .cs-container {
+    max-width: 80rem;
+  }
+  #blog-985 .cs-card-group {
+    flex-direction: row;
+  }
+}
+/*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbsr-579 {
+    background: #090909;
+    font-family: var(--bodyFont);
+  }
+  #sbsr-579 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 7vw, 4rem);
+  }
+  #sbsr-579 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 32.625rem;
+    /* moved section padding to the .cs-content so we can have the cs-picture be full width on mobile without the padding preventing it from doing so */
+    padding: var(--sectionPadding);
+    padding-top: 0;
+    /* prevents padding from affecting width and height */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #sbsr-579 .cs-title {
+    font-style: italic;
+  }
+  #sbsr-579 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #sbsr-579 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #sbsr-579 .cs-button-solid {
+    font-family: var(--topperFont);
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #000000;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #sbsr-579 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #sbsr-579 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #sbsr-579 .cs-picture {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 18.75rem;
+  }
+  #sbsr-579 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #sbsr-579 {
+    padding: var(--sectionPadding);
+  }
+  #sbsr-579 .cs-container {
+    flex-direction: row;
+    justify-content: flex-end;
+    /* 60px - 128px */
+    gap: clamp(3.75rem, 10vw, 8rem);
+  }
+  #sbsr-579 .cs-content {
+    width: 53%;
+    /* reset the padding, add the section padding back to the section container */
+    padding: 0;
+  }
+  #sbsr-579 .cs-picture {
+    width: 47vw;
+    max-width: 30.875rem;
+    /* 518px - 700px */
+    height: clamp(32.375rem, 63vw, 43.75rem);
+    /* 16px - 28px, added margin left and bottom to cs-picture so it pushes away by the same amount the yellow box element overlaps it left and bottom. This maintains consistent spacing left and bottom */
+    margin: 0 0 clamp(1rem, 2.4vw, 1.75rem) clamp(1rem, 2.4vw, 1.75rem);
+    position: relative;
+    /* sends it to the right in the 2nd position */
+    order: 2;
+  }
+  #sbsr-579 .cs-picture:before {
+    /* yellow box */
+    content: "";
+    width: 50%;
+    height: 60%;
+    background: var(--primaryLight);
+    opacity: 1;
+    display: block;
+    position: absolute;
+    /* 16px - 28px, wrapped in calc function to multiple by negative 1 and get a negative clamp value */
+    bottom: calc(clamp(1rem, 2.4vw, 1.75rem) * -1);
+    right: calc(clamp(1rem, 2.4vw, 1.75rem) * -1);
   }
 }
 
