@@ -128,6 +128,7 @@ body {
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
         font-family: Quattrocento, serif;
         width: 100%;
+        height: 75px;
         padding: 0.75rem 1.25rem;
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
@@ -137,6 +138,7 @@ body {
         z-index: 10000;
 
         transition: background-color 0.15s;
+        display: flex;
     }
     /* Class below sets navbar to white when the hamburger menu is clicked and the navbar has not scrolled enough to change to white yet. Basically for when the hamburger menu is opened when the site is loaded and haas not been scrolled yet */
     #cs-navigation.cs-active {
@@ -149,7 +151,7 @@ body {
     }
     #cs-navigation.scrolled {
         background: rgba(0, 0, 0, 0.7);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        box-shadow: 0 8px 32px 0 rgb(113 113 113 / 23%);
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
     }
@@ -214,7 +216,7 @@ body {
         //   min-height: 3.5rem;
         //   height: 100%;
         /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
-        object-fit: contain;
+        // object-fit: contain;
     }
 
     #cs-navigation .cs-toggle {
@@ -314,7 +316,7 @@ body {
     }
     #cs-navigation .cs-ul {
         margin: 0;
-        padding: 3rem 0 0 0;
+        padding: 2rem 0 0 0;
         width: 100%;
         height: auto;
         max-height: 65vh;
@@ -377,6 +379,7 @@ body {
     }
     #cs-navigation .cs-li-link {
         font-family: var(--navFont);
+        font-style: italic;
         /* 16px - 24px */
         font-size: clamp(1rem, 2.5vw, 1.5rem);
         line-height: 1.2em;
@@ -390,7 +393,7 @@ body {
         /* active state underline */
         content: "";
         width: 100%;
-        height: 1px;
+        height: 3px;
         background: currentColor;
         opacity: 1;
         position: absolute;
