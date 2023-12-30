@@ -144,19 +144,19 @@
         display: inline-block;
         position: relative;
         z-index: 1;
-        border-radius: var(--buttonRadius);
+        border-radius: 0.25rem;
     }
     #hero-227 .cs-button-solid:before {
         content: "";
         position: absolute;
-        display: block;
         height: 100%;
         width: 0%;
-        background: #000;
+        background: var(--primaryLight);
         opacity: 1;
         top: 0;
         left: 0;
         z-index: -1;
+        border-radius: 0.25rem;
         transition: width 0.3s;
     }
     #hero-227 .cs-button-solid:hover:before {

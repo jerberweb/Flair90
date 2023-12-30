@@ -414,7 +414,7 @@ body {
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
     font-family: Quattrocento, serif;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
     background-color: var(--navbackground);
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
@@ -433,15 +433,17 @@ body {
   }
   /* Class below sets navbar to white when the hamburger menu is clicked and the navbar has not scrolled enough to change to white yet. Basically for when the hamburger menu is opened when the site is loaded and haas not been scrolled yet */
   #cs-navigation.scrolled {
-    --navbackground: #ffffff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(113, 113, 113, 0.23);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
   }
   #cs-navigation .cs-toggle {
     display: none;
   }
   #cs-navigation .cs-logo {
     width: 18.4%;
-    max-width: 21.875rem;
+    max-width: 120px;
     height: 4.0625rem;
     /* margin-right auto pushes everything away from it to the right */
     margin: 0 auto 0 0;
@@ -458,9 +460,6 @@ body {
     object-fit: contain;
   }
   /* Changes logo to black when scrolled */
-  #cs-navigation.scrolled .cs-logo svg path {
-    fill: black;
-  }
   #cs-navigation .cs-ul {
     width: 100%;
     margin: 0;
@@ -489,7 +488,7 @@ body {
     position: relative;
   }
   #cs-navigation.scrolled .cs-li-link {
-    color: black;
+    color: rgb(255, 255, 255);
   }
   #cs-navigation .cs-li-link:hover:before {
     width: 100%;
@@ -511,6 +510,7 @@ body {
     transition: width 0.3s;
   }
   #cs-navigation .cs-button-solid {
+    font-family: var(--topperFont);
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875em, 5.5vw, 3.5em);
@@ -518,7 +518,7 @@ body {
     font-weight: 700;
     text-align: center;
     margin: 0;
-    color: #fff;
+    color: #000000;
     min-width: 9.375rem;
     padding: 0 1.5rem;
     background-color: var(--primary);
@@ -534,7 +534,7 @@ body {
     position: absolute;
     height: 100%;
     width: 0%;
-    background: #000;
+    background: var(--primaryLight);
     opacity: 1;
     top: 0;
     left: 0;
@@ -563,6 +563,161 @@ body {
     z-index: 1;
     /* prevents padding from adding to the width */
     box-sizing: border-box;
+  }
+}
+/*-- -------------------------- -->
+<---          Footer            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #footer-1390 {
+    padding: var(--sectionPadding);
+    background-color: #111111;
+    position: relative;
+    z-index: 1;
+  }
+  #footer-1390 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer-1390 .cs-top {
+    width: 100%;
+    margin-bottom: 2.5rem;
+    /* 24px - 64px */
+    padding-bottom: clamp(1.5rem, 5vw, 4rem);
+    border-bottom: 1px solid #484848;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* 24px - 40px */
+    gap: clamp(1.25rem, 4vw, 2.5rem);
+  }
+  #footer-1390 .cs-ul {
+    font-family: var(--navFont);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0.5rem;
+    /* 24px - 36px */
+    column-gap: clamp(1.5rem, 4vw, 2.25rem);
+  }
+  #footer-1390 .cs-li {
+    list-style: none;
+  }
+  #footer-1390 .cs-link {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    text-decoration: none;
+    margin: 0;
+    color: #bababa;
+    display: block;
+    transition: color 0.3s;
+  }
+  #footer-1390 .cs-link:hover {
+    color: var(--primary);
+  }
+  #footer-1390 .cs-logo {
+    width: 100%;
+    max-width: 12rem;
+    height: auto;
+    display: block;
+  }
+  #footer-1390 .cs-logo-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  #footer-1390 .cs-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  #footer-1390 .cs-social {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #footer-1390 .cs-social-li {
+    list-style: none;
+  }
+  #footer-1390 .cs-social-link {
+    width: 2rem;
+    height: 2rem;
+    background-color: #484848;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  #footer-1390 .cs-social-link:hover {
+    background-color: var(--primary);
+  }
+  #footer-1390 .cs-social-link:hover .cs-social-icon {
+    filter: grayscale(1) brightness(1000%);
+    opacity: 1;
+  }
+  #footer-1390 .cs-social-icon {
+    width: 0.75rem;
+    height: auto;
+    display: block;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+  #footer-1390 .cs-copyright {
+    font-size: 1rem;
+    color: #bababa;
+    line-height: 1.5em;
+    margin: 0;
+    display: block;
+  }
+  #footer-1390 .cs-copyright-link,
+  #footer-1390 .cs-separater {
+    font-family: var(--bodyFont);
+    font-style: italic;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #bababa;
+    transition: color 0.3s;
+  }
+  #footer-1390 .cs-copyright-link:hover,
+  #footer-1390 .cs-separater:hover {
+    color: var(--primary);
+  }
+  #footer-1390 .cs-separater {
+    margin: 0 1rem;
+    display: inline-block;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #footer-1390 .cs-top {
+    align-items: flex-start;
+  }
+  #footer-1390 .cs-bottom {
+    flex-direction: row;
+    justify-content: center;
+  }
+  #footer-1390 .cs-flex {
+    margin: 0 auto;
+  }
+  #footer-1390 .cs-social {
+    /* sends it to the right in the 3rd position */
+    order: 3;
   }
 }
 
