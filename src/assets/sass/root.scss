@@ -496,7 +496,7 @@ body {
 
     /* Changes logo to black when scrolled */
     #cs-navigation.scrolled .cs-logo svg path {
-        // fill: black;
+        fill: white;
     }
 
     #cs-navigation .cs-ul {
@@ -516,7 +516,7 @@ body {
         flex: none;
     }
     #cs-navigation .cs-li-link {
-        font-family: Quattrocento-700, "Arial", sans-serif;
+        font-family: var(--topperFont);
         /* 14px - 16px */
         font-size: clamp(1rem, 1vw, 1.25rem);
         line-height: 1.5em;
