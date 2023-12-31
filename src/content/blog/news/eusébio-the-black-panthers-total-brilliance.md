@@ -7,6 +7,7 @@ author: Flair90 Staff
 date: 2023-12-31T22:16:14.515Z
 tags:
   - post
+  - news
 image: /assets/images/blog/eusebio.webp
 imageAlt: Jude Bellingham's famous Celebration
 ---
