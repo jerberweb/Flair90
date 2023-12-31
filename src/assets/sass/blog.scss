@@ -14,8 +14,14 @@
         box-sizing: border-box;
         padding: 0;
     }
-    #main {
-        background: #1a1a1a;
+
+    .black-bg {
+        background-color: #151515;
+    }
+    .yellow-bg {
+        background-color: var(--primary);
+        background-image: url(../images/grunge.webp);
+        background-size: 1000px;
     }
 
     .blog-container {
@@ -93,7 +99,7 @@
             text-align: left;
             width: 100%;
             margin: 0;
-            color: #fff;
+            color: #000000;
         }
 
         .blog-bg {
@@ -296,9 +302,10 @@
         }
 
         .article-group {
-            background: var(--primary);
+            width: 100%;
+            background: #0c0c0c;
             padding: clamp(30px, 5vw, 50px);
-            border: 1px solid var(--primary);
+            border: 1px solid #0c0c0c;
             border-radius: 0 0 calc(8 / 16 * 1em) calc(8 / 16 * 1em);
         }
 
@@ -331,30 +338,31 @@
         .blog-date {
             font-size: calc(14 / 16 * 1rem);
             line-height: 1.5em;
-            color: rgba(0, 0, 0, 0.72);
+            color: rgba(255, 255, 255, 0.72);
         }
 
         .blog-dot {
             width: 3px;
             height: 3px;
-            background-color: rgb(0, 0, 0);
+            background-color: var(--primary);
             border-radius: 50%;
             display: block;
         }
 
         .blog-h1 {
             font-size: clamp(20px, 5vw, 32px);
+            font-style: italic;
             font-weight: 700;
             line-height: 1.4em;
             margin: calc(16 / 16 * 1rem) 0;
-            color: black;
+            color: whitesmoke;
         }
 
         .blog-desc {
             font-size: calc(16 / 16 * 1rem);
             line-height: 1.5em;
             margin: calc(16 / 16 * 1rem) 0 calc(32 / 16 * 1rem);
-            color: rgb(21, 21, 21);
+            color: rgb(231, 231, 231);
         }
 
         .blog-link {
@@ -369,8 +377,8 @@
             /* prevents padding from adding to the width */
             box-sizing: border-box;
             padding: 0 calc(24 / 16 * 1rem);
-            color: #ffffff;
-            background-color: black;
+            color: #000000;
+            background-color: var(--primary);
             border-radius: 0.35rem;
             display: inline-block;
             position: relative;
@@ -413,60 +421,6 @@
     }
 }
 
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-    body.dark-mode {
-        .recent-articles {
-            .blog-h1,
-            .blog-desc,
-            .blog-author,
-            .blog-date {
-                color: #f7f7f7;
-            }
-        }
-
-        .blog-sidebar {
-            .feature-h3,
-            .feature-date,
-            .blog-header {
-                color: #f7f7f7;
-            }
-            .blog-header {
-                &:after {
-                    background: var(--primary);
-                }
-            }
-        }
-
-        .blog-article {
-            .blog-h1,
-            .blog-author,
-            .blog-date {
-                color: #f7f7f7;
-            }
-
-            #blog-content {
-                h1,
-                h2,
-                h3,
-                h4,
-                h5,
-                h6 {
-                    color: #f7f7f7;
-                }
-                p,
-                li {
-                    color: #f7f7f7;
-                    opacity: 0.8;
-                }
-                a {
-                    color: #9dafe5;
-                }
-            }
-        }
-    }
-}
-
 /*-- -------------------------- -->
 <---          Sidebar           -->
 <--- -------------------------- -*/
@@ -486,20 +440,26 @@
         .blog-featured-group {
             width: 100%;
             padding: calc(35 / 16 * 1em) calc(30 / 16 * 1em);
-            border: 1px solid var(--primary);
+            border: 1px solid black;
             border-radius: calc(8 / 16 * 1em);
+            background: #0c0c0c;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
+
+            box-shadow: -1px 7px 10px 4px rgba(0, 0, 0, 0.28);
+            -webkit-box-shadow: -1px 7px 10px 4px rgba(0, 0, 0, 0.28);
+            -moz-box-shadow: -1px 7px 10px 4px rgba(0, 0, 0, 0.28);
         }
 
         .blog-header {
+            font-family: var(--bodyFont);
             font-size: calc(20 / 16 * 1em);
             font-weight: bold;
             text-align: center;
             margin-bottom: calc(30 / 16 * 1rem);
-            color: var(--primary);
+            color: whitesmoke;
             display: block;
             position: relative;
 
@@ -508,7 +468,7 @@
                 width: calc(50 / 16 * 1rem);
                 height: 3px;
                 margin: calc(16 / 16 * 1rem) auto;
-                background: var(--headerColor);
+                background: whitesmoke;
                 border-radius: calc(4 / 16 * 1rem);
                 display: block;
                 position: relative;
@@ -555,20 +515,25 @@
         }
 
         .feature-h3 {
+            font-family: var(--bodyFont);
+            font-style: italic;
             font-size: calc(15 / 16 * 1rem);
             font-weight: 700;
             line-height: 1.5em;
             text-decoration: none;
             margin: 0;
-            margin-bottom: calc(4 / 16 * 1rem);
+            margin-bottom: 2px;
             color: var(--primaryLight);
             display: block;
+        }
+        .feature-h3:hover {
+            border-bottom: 2px solid var(--primaryLight);
         }
 
         .feature-date {
             font-size: calc(14 / 16 * 1rem);
             line-height: 1.5em;
-            color: var(--bodyTextColor);
+            color: whitesmoke;
             display: block;
         }
     }
@@ -591,6 +556,8 @@
         width: 100%;
         max-width: calc(795 / 16 * 1em);
         display: block;
+        font-family: var(--bodyFont);
+        color: var(--bodyTextColorWhite);
         .blog-mainImage {
             width: 100%;
             height: clamp(200px, 30vw, 400px);
@@ -639,18 +606,19 @@
         .blog-date {
             font-size: calc(14 / 16 * 1rem);
             line-height: 1.5em;
-            color: var(--bodyTextColor);
+            color: var(--primaryLight);
         }
 
         .blog-dot {
             width: 3px;
             height: 3px;
-            background-color: #fe4f70;
+            background-color: var(--primary);
             border-radius: 50%;
             display: block;
         }
 
         .blog-h1 {
+            font-style: italic;
             font-size: clamp(20px, 5vw, 39px);
             font-weight: 700;
             line-height: 1.4em;
@@ -662,7 +630,7 @@
         #blog-content {
             margin-top: calc(16 / 16 * 1em);
             padding-top: calc(25 / 16 * 1em);
-            border-top: 1px solid #ebebeb;
+            border-top: 1px solid var(--primaryLight);
 
             h1 {
                 font-size: 2.25rem;
@@ -703,13 +671,13 @@
                 line-height: 1.6em;
                 margin: 0;
                 margin-bottom: calc(16 / 16 * 1rem);
-                color: var(--bodyTextColor);
+                color: var(--bodyTextColorWhite);
             }
 
             a {
                 font-size: inherit;
                 text-decoration: underline;
-                color: var(--secondary);
+                color: var(--primary);
             }
 
             ul,
@@ -723,7 +691,7 @@
                     line-height: 1.6em;
                     list-style: circle;
                     margin-bottom: calc(16 / 16 * 1rem);
-                    color: var(--bodyTextColor);
+                    color: var(--bodyTextColorWhite);
                 }
             }
 
