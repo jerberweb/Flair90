@@ -32,12 +32,12 @@ eleventyNavigation:
     <!--Main content -->
     <div class="main-content">
         <!-- ============================================ -->
-        <!--                 Blog Articles                -->
+        <!--            News Articles Only                -->
         <!-- ============================================ -->
 
-        {% if collections.post | length == 0 %}
+        {% if collections.news | length == 0 %}
         <h1>No Recent Posts</h1>
-        {% else %} {%- for post in collections.post | reverse -%}
+        {% else %} {%- for post in collections.news | reverse -%}
         <article class="recent-articles">
             <!--Main Article Image-->
             <picture class="blog-mainImage">
