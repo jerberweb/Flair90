@@ -481,6 +481,7 @@ body {
   }
   #cs-navigation .cs-li-link {
     font-family: var(--topperFont);
+    font-style: italic;
     /* 14px - 16px */
     font-size: clamp(1rem, 1vw, 1.25rem);
     line-height: 1.5em;
@@ -516,14 +517,14 @@ body {
     font-family: var(--topperFont);
     font-size: 1rem;
     /* 46px - 56px */
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    line-height: clamp(2.875em, 5.5vw, 3em);
     text-decoration: none;
     font-weight: 700;
     text-align: center;
     margin: 0;
     color: #000000;
     min-width: 9.375rem;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     background-color: var(--primary);
     border-radius: 0.25rem;
     display: inline-block;
@@ -537,7 +538,7 @@ body {
     position: absolute;
     height: 100%;
     width: 0%;
-    background: var(--primaryLight);
+    background: white;
     opacity: 1;
     top: 0;
     left: 0;
@@ -722,6 +723,52 @@ body {
     /* sends it to the right in the 3rd position */
     order: 3;
   }
+}
+/* you can copy and paste this into your global stylesheet to be used everywhere in your site */
+#button-box-838 {
+  width: 100%;
+  margin-bottom: -2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+#button-box-838::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+#button-box-838 .cs-button-transparent {
+  font-family: var(--topperFont);
+  font-size: 1rem;
+  /* 46px - 56px */
+  line-height: clamp(2rem, 5.5vw, 2.25rem);
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  color: var(--primaryLight);
+  padding: 0 1rem;
+  background-color: transparent;
+  border: 2px solid var(--primaryLight);
+  border-radius: 1.5rem;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  /* prevents padding from adding to the width */
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s;
+  text-wrap: nowrap;
+}
+
+#button-box-838 .cs-button-transparent:hover {
+  background-color: var(--primaryLight);
+  color: #000000;
 }
 
 /*# sourceMappingURL=root.css.map */

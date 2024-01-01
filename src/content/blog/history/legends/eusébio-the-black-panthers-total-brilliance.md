@@ -1,16 +1,16 @@
 ---
 title: "Eusébio: The Black Panther's Total Brilliance"
-description: In the tapestry of football history, few names resonate with as
-  much brilliance as Eusébio da Silva Ferreira, the legendary Portuguese forward
-  commonly known as Eusébio.
+description: In the tapestry of football history, few names resonate with as much brilliance as Eusébio da Silva Ferreira, the legendary Portuguese forward commonly known as Eusébio.
 author: Flair90 Staff
 date: 2023-12-31T22:16:14.515Z
 tags:
-  - post
-  - news
+    - post
+    - history
+    - legends
 image: /assets/images/blog/eusebio.webp
-imageAlt: Jude Bellingham's famous Celebration
+imageAlt: Eusebio
 ---
+
 In the tapestry of football history, few names resonate with as much brilliance as Eusébio da Silva Ferreira, the legendary Portuguese forward commonly known as Eusébio. A beacon of skill, speed, and goal-scoring prowess, Eusébio left an indelible mark on the beautiful game, earning his place among the pantheon of football legends.
 
 ## Rise from Mozambique: The Early Years of Eusébio

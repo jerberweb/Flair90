@@ -1,11 +1,11 @@
 ---
-title: "Chronicles"
+title: "History"
 description: "Embark on a journey through football's illustrious past. Explore milestones, legends, and the World Cup, delving into the rich tapestry that defines the sport's extraordinary history."
 preloadImg: "/assets/images/cabinets2.jpg"
-permalink: "chronicles/"
+permalink: "history/"
 eleventyNavigation:
-    key: Chronicles
-    order: 400
+    key: History
+    order: 300
 ---
 
 {% extends "layouts/base.html" %} {% block head %}
@@ -32,14 +32,17 @@ eleventyNavigation:
     <!--Main content -->
     <div class="main-content">
         <div id="button-box-838" class="cs-contact-group">
-            <a href="#" class="cs-button-transparent" data-category="milestones">Milestones</a>
-            <a href="#" class="cs-button-transparent" data-category="legends">Legends</a>
-            <a href="#" class="cs-button-transparent" data-category="worldcups">World Cups</a>
+            <a href="" class="cs-button-transparent">Milestones</a>
+            <a href="" class="cs-button-transparent">Legends</a>
+            <a href="" class="cs-button-transparent">World Cups</a>
         </div>
+        <!-- ============================================ -->
+        <!--            History Articles Only                -->
+        <!-- ============================================ -->
 
-        {% if currentCollection | length == 0 %}
+        {% if collections.legends | length == 0 %}
         <h1>No Recent Posts</h1>
-        {% else %} {%- for post in currentCollection | reverse -%}
+        {% else %} {%- for post in collections.legends | reverse -%}
         <article class="recent-articles">
             <!--Main Article Image-->
             <picture class="blog-mainImage">
@@ -67,50 +70,4 @@ eleventyNavigation:
 
     {% include 'components/featured-post.html' %}
 </div>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Initial category
-        let currentCategory = "milestones";
-
-        // Function to update content based on the selected category
-        function updateContent(category) {
-            // You can fetch data dynamically or show/hide content based on the selected category
-            // For simplicity, let's just log the selected category for now
-            console.log("Selected category:", category);
-
-            // Here, you can update the collections variable or fetch new data based on the selected category
-            // For example: collections = collections[category];
-            currentCategory = category; // Update the current category
-            renderContent(); // Re-render the content
-        }
-
-        // Event listener for link clicks
-        document.getElementById("button-box-838").addEventListener("click", function (event) {
-            if (event.target.tagName === "A") {
-                // Prevent default link behavior
-                event.preventDefault();
-
-                // Get the category from the data-category attribute
-                const category = event.target.getAttribute("data-category");
-
-                // Update content only if the category is different from the current one
-                if (category !== currentCategory) {
-                    // Update the content
-                    updateContent(category);
-                }
-            }
-        });
-
-        // Initial rendering
-        function renderContent() {
-            // Your initial rendering logic here
-            // This can include setting the initial content based on the currentCategory
-            // and any other logic you need for the first load
-        }
-
-        renderContent(); // Call the initial rendering
-    });
-</script>
-
 {% endblock %}

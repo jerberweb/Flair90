@@ -150,7 +150,7 @@
     position: absolute;
     height: 100%;
     width: 0%;
-    background: var(--primaryLight);
+    background: white;
     opacity: 1;
     top: 0;
     left: 0;
@@ -351,7 +351,7 @@
 /* Desktop Parallax Effect - 1300px */
 @media only screen and (min-width: 81.25rem) {
   #hero-227 {
-    background: url("https://csimg.nyc3.digitaloceanspaces.com/Hero/Background.jpg");
+    background: url(../images/hero.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
