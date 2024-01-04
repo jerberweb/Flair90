@@ -2,12 +2,20 @@
 title: "Milestones"
 description: "Embark on a journey through football's illustrious past. Explore milestones, legends, and the World Cup, delving into the rich tapestry that defines the sport's extraordinary history."
 preloadImg: "/assets/images/cabinets2.jpg"
-permalink: "milestones/"
+permalink: "milestones/{% if pagination.pageNumber > 0 %}/{{ pagination.pageNumber }}{% endif %}"
+pagination:
+    data: collections.milestones
+    size: 2
+    alias: pageNumber
+    reverse: true
 eleventyNavigation:
     key: Milestones
     order: 101
     parent: History
 ---
+
+<!-- With 11ty pagination, we replace collections.key (Ex. collections.milestones) with pagination.items and set the data attricbute to the collections.key -->
+
 
 {% extends "layouts/base.html" %} {% block head %}
 <link rel="stylesheet" href="/assets/css/blog.css" />
@@ -35,9 +43,9 @@ eleventyNavigation:
             <!-- ============================================ -->
             <!--            History Articles Only             -->
             <!-- ============================================ -->
-            {% if collections.milestones | length == 0 %}
+            {% if pagination.items | length == 0 %}
             <h1>No Recent Posts</h1>
-            {% else %} {%- for post in collections.milestones | reverse -%}
+            {% else %} {%- for post in pagination.items | reverse -%}
             <article class="recent-articles">
                 <!--Main Article Image-->
                 <picture class="blog-mainImage">
@@ -60,9 +68,12 @@ eleventyNavigation:
                     <a href="{{ post.url }}" class="blog-link">Continue Reading</a>
                 </div>
             </article>
-            {%- endfor -%} {% endif %}
+            {%- endfor -%} {% endif %} 
+            
+        {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous page</a>{% endif %}
+        | 
+        {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next page</a>{% endif %}   
         </div>
-
         {% include 'components/featured-post.html' %}
     </div>
     {% endblock %}
