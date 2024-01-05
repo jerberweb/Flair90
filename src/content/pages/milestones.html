@@ -45,7 +45,7 @@ eleventyNavigation:
             <!-- ============================================ -->
             {% if pagination.items | length == 0 %}
             <h1>No Recent Posts</h1>
-            {% else %} {%- for post in pagination.items | reverse -%}
+            {% else %} {%- for post in pagination.items -%}
             <article class="recent-articles">
                 <!--Main Article Image-->
                 <picture class="blog-mainImage">
