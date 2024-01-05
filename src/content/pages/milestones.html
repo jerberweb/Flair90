@@ -2,13 +2,12 @@
 title: "Milestones"
 description: "Embark on a journey through football's illustrious past. Explore milestones, legends, and the World Cup, delving into the rich tapestry that defines the sport's extraordinary history."
 preloadImg: "/assets/images/cabinets2.jpg"
-permalink: "milestones/{% if pagination.pageNumber > 0 %}/{{ pagination.pageNumber }}{% endif %}index.html"
+permalink: "milestones/{% if pagination.pageNumber > 0 %}/{{ pagination.pageNumber }}{% endif %}"
 pagination:
     data: collections.milestones
     size: 2
     alias: pageNumber
     reverse: true
-    addAllPagesToCollections: true
 eleventyNavigation:
     key: Milestones
     order: 101

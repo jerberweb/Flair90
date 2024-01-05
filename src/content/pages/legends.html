@@ -5,7 +5,7 @@ preloadImg: "/assets/images/cabinets2.jpg"
 permalink: "legends/{% if pagination.pageNumber > 0 %}/{{ pagination.pageNumber }}{% endif %}"
 pagination:
     data: collections.legends
-    size: 2
+    size: 1
     alias: pageNumber
     reverse: true
 eleventyNavigation:
@@ -40,9 +40,9 @@ eleventyNavigation:
             <!-- ============================================ -->
             <!--            History Articles Only             -->
             <!-- ============================================ -->
-            {% if collections.legends | length == 0 %}
+            {% if pagination.items | length == 0 %}
             <h1>No Recent Posts</h1>
-            {% else %} {%- for post in collections.legends | reverse -%}
+            {% else %} {%- for post in pagination.items | reverse -%}
             <article class="recent-articles">
                 <!--Main Article Image-->
                 <picture class="blog-mainImage">
@@ -66,10 +66,11 @@ eleventyNavigation:
                 </div>
             </article>
             {%- endfor -%} {% endif %}
-
-            {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous page</a>{% endif %}
-            | 
-            {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next page</a>{% endif %}   
+            <div class="pagination-div">
+                {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous page</a>{% endif %}
+                | 
+                {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next page</a>{% endif %}   
+            </div>
         </div>
 
         {% include 'components/featured-post.html' %}
