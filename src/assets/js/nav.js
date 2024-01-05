@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("popstate", checkURL);
 });
 
+// Background changes for each blog post page
 function checkURL() {
     // Get the current URL
     var currentURL = window.location.pathname;
