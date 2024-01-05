@@ -2,7 +2,7 @@
 title: "Milestones"
 description: "Embark on a journey through football's illustrious past. Explore milestones, legends, and the World Cup, delving into the rich tapestry that defines the sport's extraordinary history."
 preloadImg: "/assets/images/cabinets2.jpg"
-permalink: "milestones/{% if pagination.pageNumber > 0 %}/{{ pagination.pageNumber }}{% endif %}"
+permalink: "milestones/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}"
 pagination:
     data: collections.milestones
     size: 2
@@ -70,9 +70,11 @@ eleventyNavigation:
             </article>
             {%- endfor -%} {% endif %} 
             
-        {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous page</a>{% endif %}
-        | 
-        {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next page</a>{% endif %}   
+            <div class="pagination-div">
+                {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous Page</a>{% endif %}
+            
+                {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next Page</a>{% endif %}   
+            </div>
         </div>
         {% include 'components/featured-post.html' %}
     </div>

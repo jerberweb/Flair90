@@ -464,6 +464,7 @@ body {
         top: 50%;
         right: -1.25rem;
         transform: translateY(-50%);
+        fill: #000000;
     }
     #cs-navigation .cs-drop-ul {
         width: 100%;
@@ -495,6 +496,7 @@ body {
     #cs-navigation .cs-dropdown {
         position: relative;
     }
+
     #cs-navigation .cs-dropdown:hover {
         cursor: pointer;
     }
@@ -511,6 +513,7 @@ body {
         width: 0.9375rem;
         height: auto;
         display: inline-block;
+        fill: var(--primary);
     }
     #cs-navigation .cs-drop-ul {
         min-width: 12.5rem;
@@ -928,53 +931,17 @@ body {
     }
 }
 
-// Found on History Page
+// Pagination Links
 
-/* you can copy and paste this into your global stylesheet to be used everywhere in your site */
-#button-box-838 {
-    width: 100%;
-    // max-width: calc(39.375rem);
-    margin-bottom: -2rem;
+.pagination-div {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    // flex-wrap: wrap;
-    gap: 1rem;
-    overflow-x: scroll;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    flex-direction: row;
+    padding-inline: 1rem;
+    gap: 1.5rem;
 }
-
-#button-box-838::-webkit-scrollbar {
-    /* WebKit */
-    width: 0;
-    height: 0;
-}
-
-#button-box-838 .cs-button-transparent {
-    font-family: var(--topperFont);
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2rem, 5.5vw, 2.25rem);
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-    margin: 0;
+.pagination-div a {
+    font-family: var(--bodyFont);
+    font-style: italic;
     color: var(--primaryLight);
-    // min-width: 120px;
-    padding: 0 1rem;
-    background-color: transparent;
-    border: 2px solid var(--primaryLight);
-    border-radius: 1.5rem;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    transition: background-color 0.3s, color 0.3s;
-    text-wrap: nowrap;
-}
-#button-box-838 .cs-button-transparent:hover {
-    background-color: var(--primaryLight);
-    color: #000000;
+    // text-decoration: none;
 }
