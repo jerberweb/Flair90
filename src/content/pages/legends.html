@@ -5,7 +5,7 @@ preloadImg: "/assets/images/cabinets2.jpg"
 permalink: "legends/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}"
 pagination:
     data: collections.legends
-    size: 2
+    size: 3
     alias: pageNumber
     reverse: true
 eleventyNavigation:
@@ -42,7 +42,7 @@ eleventyNavigation:
             <!-- ============================================ -->
             {% if pagination.items | length == 0 %}
             <h1>No Recent Posts</h1>
-            {% else %} {%- for post in pagination.items | reverse -%}
+            {% else %} {%- for post in pagination.items -%}
             <article class="recent-articles">
                 <!--Main Article Image-->
                 <picture class="blog-mainImage">
