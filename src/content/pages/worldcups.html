@@ -1,17 +1,21 @@
 ---
-title: "News"
-description: "Stay on the pulse of the football world. Catch up on the latest transfer buzz, match insights, and exclusive news that fuels your passion for the game."
-preloadImg: "/assets/images/hero.webp"
-permalink: "news/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}"
+title: "WorldCups"
+description: "Embark on a journey through football's illustrious past. Explore milestones, legends, and the World Cup, delving into the rich tapestry that defines the sport's extraordinary history."
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "worldcups/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}"
 pagination:
-    data: collections.news
-    size: 1
+    data: collections.worldcups
+    size: 2
     alias: pageNumber
     reverse: true
 eleventyNavigation:
-    key: News
-    order: 200
+    key: World Cups
+    order: 103
+    parent: History
 ---
+
+<!-- With 11ty pagination, we replace collections.key (Ex. collections.milestones) with pagination.items and set the data attricbute to the collections.key -->
+
 
 {% extends "layouts/base.html" %} {% block head %}
 <link rel="stylesheet" href="/assets/css/blog.css" />
@@ -21,7 +25,7 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="int-hero">
-    <h1 id="home-h">Legends</h1>
+    <h1 id="home-h">World Cups</h1>
     <picture>
         <source media="(max-width: 600px)" srcset="/assets/images/hero-m.webp" />
         <source media="(min-width: 601px)" srcset="/assets/images/hero.webp" />
@@ -64,14 +68,14 @@ eleventyNavigation:
                     <a href="{{ post.url }}" class="blog-link">Continue Reading</a>
                 </div>
             </article>
-            {%- endfor -%} {% endif %}
+            {%- endfor -%} {% endif %} 
+            
             <div class="pagination-div">
                 {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous Page</a>{% endif %}
-                 
+            
                 {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next Page</a>{% endif %}   
             </div>
         </div>
-
         {% include 'components/featured-post.html' %}
     </div>
     {% endblock %}

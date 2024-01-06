@@ -4,8 +4,10 @@ eleventyComputed:
     title: "{{ title }}"
     description: "{{ description }}"
     preloadImg: "{{ image }}"
-    permalink: "/blog/{{ title | slug }}/index.html"
+    permalink: "/{{ tags[3] | slug }}/{{ title | slug }}/index.html"
 ---
+
+<!-- For permalink, the 3rd tag always needs to be the category. For featured posts, put the featured tag last -->
 
 {% extends "layouts/base.html" %} {% block head %}
 <link rel="stylesheet" href="/assets/css/blog.css" />
@@ -16,9 +18,9 @@ eleventyComputed:
 
 <section id="int-hero">
     <picture>
-        <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg" />
-        <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg" />
-        <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667" />
+        <source media="(max-width: 600px)" srcset="/assets/images/hero-m.webp" />
+        <source media="(min-width: 601px)" srcset="/assets/images/hero.webp" />
+        <img aria-hidden="true" decoding="async" src="/assets/images/hero.webp" alt="kitchen cabinets" loading="eager" width="2500" height="1667" />
     </picture>
 </section>
 
