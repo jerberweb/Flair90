@@ -4,10 +4,11 @@ eleventyComputed:
     title: "{{ title }}"
     description: "{{ description }}"
     preloadImg: "{{ image }}"
-    permalink: "/{{ tags[3] | slug }}/{{ title | slug }}/index.html"
+    permalink: "/{{ tags[2] | slug }}/{% if tags[3] != nil %}/{{ tags[3] | slug }}{% endif %}/{{ title | slug }}/index.html"
 ---
 
 <!-- For permalink, the 3rd tag always needs to be the category. For featured posts, put the featured tag last -->
+<!-- {% if tags[3] != nil %}/{{ tags[3] | slug }}{% endif %} ----- This checks if there is a 3 tag. News posts don't have a third tag -->
 
 {% extends "layouts/base.html" %} {% block head %}
 <link rel="stylesheet" href="/assets/css/blog.css" />
@@ -47,7 +48,7 @@ eleventyComputed:
                 <div class="blog-authorGroup">
                     <!--Author Image-->
                     <picture class="blog-author-img">
-                        <img src="/assets/svgs/profile.svg" alt="house" width="32" height="32" decoding="async" />
+                        <img src="/assets/favicons/apple-touch-icon.png" alt="house" width="32" height="32" decoding="async" />
                     </picture>
                     <span class="blog-author">{{ author }}</span>
                     <span aria-hidden="true" class="blog-dot"></span>

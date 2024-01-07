@@ -177,7 +177,6 @@
     list-style: none;
     position: relative;
     box-sizing: border-box;
-    max-width: 33.3333333333%;
   }
   #hero-227 .cs-item:before {
     /* Top Line */
@@ -325,6 +324,9 @@
     /* these two properties center the line horizontally */
     left: 50%;
     transform: translateX(-50%);
+  }
+  #hero-227 .cs-item {
+    max-width: 33.3333333333%;
   }
   #hero-227 .cs-item:before {
     width: 1px;
@@ -515,7 +517,7 @@
   #blog-985 {
     padding: var(--sectionPadding);
     background-color: #ffea00;
-    background-image: url("https://www.transparenttextures.com/patterns/grunge-wall.png");
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='30' height='30' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(53, 99%, 50%, 1)'/><path d='M0 22.5h30v15H0zm15-15h30v15H15m-30-15h30v15h-30zm15-15h30v15H0z'  stroke-width='1' stroke='hsla(259, 0%, 0%, 0.08)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
   }
   #blog-985 .cs-container {
     width: 100%;
@@ -565,7 +567,7 @@
     font-weight: 700;
     text-align: center;
     margin: 0;
-    color: #fff;
+    color: whitesmoke;
     min-width: 9.375rem;
     padding: 0 2rem;
     background-color: black;
@@ -575,21 +577,27 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
     border-radius: var(--buttonRadius);
+    transition: color 0.3s;
   }
   #blog-985 .cs-button-solid:before {
     content: "";
     position: absolute;
     height: 100%;
     width: 0%;
-    background: #000;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
     opacity: 1;
     top: 0;
     left: 0;
     z-index: -1;
     transition: width 0.3s;
+    border-radius: var(--buttonRadius);
   }
   #blog-985 .cs-button-solid:hover:before {
     width: 100%;
+  }
+  #blog-985 .cs-button-solid:hover {
+    color: #000;
   }
   #blog-985 .cs-button-solid {
     /* prevents flexbox from squishing it */
@@ -621,7 +629,7 @@
   }
   #blog-985 .cs-item:hover .cs-info:before {
     opacity: 1;
-    background-color: var(--primary);
+    background-color: rgba(161, 144, 34, 0.879);
   }
   #blog-985 .cs-item:hover .cs-picture img {
     transform: scale(1.15);
@@ -633,7 +641,8 @@
     filter: brightness(150%);
   }
   #blog-985 .cs-item:hover .cs-link {
-    color: #fff;
+    color: white;
+    font-style: italic;
   }
   #blog-985 .cs-picture {
     width: 100%;
@@ -840,13 +849,14 @@
     z-index: 1;
     /* prevents padding from adding to the width */
     box-sizing: border-box;
+    border-radius: 0.25rem;
   }
   #sbsr-579 .cs-button-solid:before {
     content: "";
     position: absolute;
     height: 100%;
     width: 0%;
-    background: #000;
+    background: #ffffff;
     opacity: 1;
     top: 0;
     left: 0;
