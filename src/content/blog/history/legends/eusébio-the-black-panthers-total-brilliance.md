@@ -7,7 +7,7 @@ tags:
     - post
     - history
     - legends
-image: /assets/images/blog/eusebio.webp
+image: /assets/images/blog/eusebio-blog.webp
 imageAlt: Eusebio
 ---
 

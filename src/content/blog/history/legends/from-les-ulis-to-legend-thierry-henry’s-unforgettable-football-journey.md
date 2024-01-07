@@ -1,17 +1,16 @@
 ---
-title: "From Les Ulis to Legend: Thierry Henry’s Unforgettable Football Journey"
-description: From his humble beginnings in Les Ulis, south of Paris, to becoming
-  the all-time leading scorer for the French national team, Henry's journey is a
-  testament to the transformative power of the beautiful game.
+title: "Thierry Henry’s Unforgettable Football Journey"
+description: From his humble beginnings in Les Ulis, south of Paris, to becoming the all-time leading scorer for the French national team, Henry's journey is a testament to the transformative power of the beautiful game.
 author: Flair90 Staff
 date: 2024-01-04T05:05:36.963Z
 tags:
-  - post
-  - history
-  - legends
+    - post
+    - history
+    - legends
 image: /assets/images/blog/img_0973.jpeg
 imageAlt: Thierry Henry
 ---
+
 Thierry Henry, born on August 17, 1977, in Châtillon, France, is more than a football legend; he is the embodiment of passion, skill, and the pursuit of greatness. From his humble beginnings in Les Ulis, south of Paris, to becoming the all-time leading scorer for the French national team, Henry's journey is a testament to the transformative power of the beautiful game.
 
 ### Early Years and Rise with AS Monaco

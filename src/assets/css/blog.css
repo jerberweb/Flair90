@@ -13,12 +13,12 @@
     padding: 0;
   }
   .black-bg {
-    background-color: #202020;
+    background-color: #000000;
+    background-image: url(../svgs/bg.svg);
   }
   .yellow-bg {
-    background-color: var(--primary);
-    background-image: url(../images/grunge.webp);
-    background-size: 1000px;
+    background-color: #000000;
+    background-image: url(../svgs/bg.svg);
   }
   .blog-container {
     width: 94%;
@@ -256,29 +256,30 @@
     -webkit-box-shadow: -1px 7px 10px 4px rgba(0, 0, 0, 0.28);
     -moz-box-shadow: -1px 7px 10px 4px rgba(0, 0, 0, 0.28);
     z-index: 0;
+    position: relative;
   }
   .recent-articles .blog-mainImage {
     width: 100%;
-    height: clamp(200px, 30vw, 400px);
+    height: 100%;
     border-radius: 0.5em;
     display: block;
-    position: relative;
+    position: absolute;
     overflow: hidden;
+    opacity: 1;
+    z-index: -1;
   }
   .recent-articles .blog-mainImage img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
-    top: 0;
-    left: 0;
   }
   .recent-articles .article-group {
     width: 100%;
-    background: #0c0c0c;
+    background: rgba(0, 0, 0, 0.7568627451);
     padding: clamp(30px, 5vw, 50px);
-    border: 1px solid #0c0c0c;
     border-radius: 0.5em;
+    z-index: 1;
   }
   .recent-articles .blog-author-img {
     width: 2em;
@@ -327,7 +328,7 @@
     font-size: 1rem;
     line-height: 1.5em;
     margin: 1rem 0 2rem;
-    color: rgb(231, 231, 231);
+    color: rgba(231, 231, 231, 0.76);
   }
   .recent-articles .blog-link {
     font-size: 1rem;
@@ -373,22 +374,8 @@
 }
 /* Mobile - 1024px */
 @media only screen and (min-width: 64em) {
-  .recent-articles {
-    position: relative;
-  }
   .recent-articles .blog-h1 {
     max-width: 31.25rem;
-  }
-  .recent-articles .blog-mainImage {
-    position: absolute;
-    height: 100%;
-    opacity: 1;
-    z-index: -1;
-  }
-  .recent-articles .article-group {
-    z-index: 1;
-    background: transparent;
-    background: rgba(0, 0, 0, 0.7647058824);
   }
 }
 /*-- -------------------------- -->

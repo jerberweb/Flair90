@@ -179,6 +179,7 @@
         list-style: none;
         position: relative;
         box-sizing: border-box;
+        max-width: calc(100% / 3);
     }
     #hero-227 .cs-item:before {
         /* Top Line */
@@ -265,6 +266,7 @@
         z-index: 10000;
     }
     #hero-227 .cs-item-text {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         /* 14px - 16px */
         font-size: clamp(0.875rem, 3vw, 1rem);
         margin: 0;
