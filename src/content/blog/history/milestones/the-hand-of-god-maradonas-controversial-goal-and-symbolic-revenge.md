@@ -1,18 +1,17 @@
 ---
 title: "The Hand of God: Maradona's Controversial Goal and Symbolic Revenge"
-description: The year was 1986, and the football world was fixated on the
-  intense showdown between Argentina and England. Six minutes into the second
-  half, Maradona left an indelible mark on the sport's history with a goal that
-  would be forever known as the "Hand of God."
+description: The year was 1986, and the football world was fixated on the intense showdown between Argentina and England. Six minutes into the second half, Maradona left an indelible mark on the sport's history with a goal that would be forever known as the "Hand of God."
 author: Flair90 Staff
 date: 2024-01-05T05:05:14.652Z
 tags:
-  - post
-  - history
-  - milestones
+    - post
+    - history
+    - milestones
+    - featured
 image: /assets/images/blog/img_0974.webp
 imageAlt: The Hand of God
 ---
+
 In the realm of football history, certain moments are eternally etched in the collective memory of fans. One such unforgettable moment revolves around the legendary Argentine footballer, Diego Maradona, and his infamous "Hand of God" goal during the 1986 FIFA World Cup quarter-finals clash against England. Brace yourselves for a journey back in time as we unravel the drama, the controversy, and the symbolic revenge that unfolded on that fateful day.
 
 ## The Illicit Brilliance
@@ -39,13 +38,13 @@ Maradona acknowledged that while it wasn't his initial plan to use his hand, the
 
 ## The Unveiling of the Truth
 
-In 2005, almost two decades after the controversial goal, Maradona decided to pull back the curtain on the Hand of God. In an interview on the program *La Noche del 10*, he openly admitted that the goal was indeed scored with his hand. This revelation ignited fresh controversy, with media outlets worldwide reporting on the admission.
+In 2005, almost two decades after the controversial goal, Maradona decided to pull back the curtain on the Hand of God. In an interview on the program _La Noche del 10_, he openly admitted that the goal was indeed scored with his hand. This revelation ignited fresh controversy, with media outlets worldwide reporting on the admission.
 
-Even though Maradona offered what seemed like an apology, stating that he "scored a little with the head of Maradona and a little with the hand of God," the English goalkeeper, Peter Shilton, rejected any notion of forgiveness. The controversy continued as Maradona, a few days later, denied everything, claiming that the British newspaper *The Sun* had misquoted him.
+Even though Maradona offered what seemed like an apology, stating that he "scored a little with the head of Maradona and a little with the hand of God," the English goalkeeper, Peter Shilton, rejected any notion of forgiveness. The controversy continued as Maradona, a few days later, denied everything, claiming that the British newspaper _The Sun_ had misquoted him.
 
 ## The Sun's Twist and The Devil's Hand
 
-The media storm took an unexpected turn when *The Sun* newspaper admitted to modifying the interpretation of Maradona's words. They proposed changing the name from the "Hand of God" to "The Devil's Hand." The original text of the interview showcased that Maradona had never explicitly asked for forgiveness for the goal.
+The media storm took an unexpected turn when _The Sun_ newspaper admitted to modifying the interpretation of Maradona's words. They proposed changing the name from the "Hand of God" to "The Devil's Hand." The original text of the interview showcased that Maradona had never explicitly asked for forgiveness for the goal.
 
 In the complex dance between truth and interpretation, the saga of the Hand of God took on yet another twist, leaving the narrative open to endless debate and discussion.
 

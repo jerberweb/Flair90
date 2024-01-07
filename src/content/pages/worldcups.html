@@ -38,6 +38,8 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <div class="blog-container main-content-wrapper">
+    {% include 'components/featured-post.html' %}
+
     <!--Main content -->
     <div class="main-content" id="article-div">
             <!-- ============================================ -->
@@ -70,13 +72,12 @@ eleventyNavigation:
             </article>
             {%- endfor -%} {% endif %} 
             
-            <div class="pagination-div">
-                {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous Page</a>{% endif %}
-            
-                {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next Page</a>{% endif %}   
-            </div>
         </div>
-        {% include 'components/featured-post.html' %}
+        <div class="pagination-div">
+            {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous Page</a>{% endif %}
+        
+            {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next Page</a>{% endif %}   
+        </div>
     </div>
     {% endblock %}
 </div>

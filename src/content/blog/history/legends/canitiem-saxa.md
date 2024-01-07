@@ -5,6 +5,8 @@ author: Code Stitch
 date: 2023-06-08T15:28:08.486Z
 tags:
     - news
+    - legends
+    - featured
 image: /assets/images/blog/landing.jpg
 imageAlt: Kitchen
 ---

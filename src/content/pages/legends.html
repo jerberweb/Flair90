@@ -5,7 +5,7 @@ preloadImg: "/assets/images/hero.webp"
 permalink: "legends/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}"
 pagination:
     data: collections.legends
-    size: 3
+    size: 4
     alias: pageNumber
     reverse: true
 eleventyNavigation:
@@ -35,6 +35,8 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <div class="blog-container main-content-wrapper">
+    {% include 'components/featured-post.html' %}
+
     <!--Main content -->
     <div class="main-content" id="article-div">
             <!-- ============================================ -->
@@ -66,14 +68,13 @@ eleventyNavigation:
                 </div>
             </article>
             {%- endfor -%} {% endif %}
-            <div class="pagination-div">
-                {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous Page</a>{% endif %}
-                 
-                {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next Page</a>{% endif %}   
-            </div>
+            
         </div>
-
-        {% include 'components/featured-post.html' %}
+        <div class="pagination-div">
+            {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous Page</a>{% endif %}
+             
+            {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next Page</a>{% endif %}   
+        </div>
     </div>
     {% endblock %}
 </div>

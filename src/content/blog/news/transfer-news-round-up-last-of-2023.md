@@ -1,18 +1,16 @@
 ---
 title: Transfer News Round Up - Last of 2023
-description: Explore the dynamic landscape of football transfers with our latest
-  roundup. From Manchester City’s acquisition of Argentina’s young talent
-  Claudio Echeverri to the intriguing contract decisions of Manchester United’s
-  Raphael Varane, dive into the evolving narratives that shape the football
-  transfer market.
+description: Explore the dynamic landscape of football transfers with our latest roundup. From Manchester City’s acquisition of Argentina’s young talent Claudio Echeverri to the intriguing contract decisions of Manchester United’s Raphael Varane, dive into the evolving narratives that shape the football transfer market.
 author: Flair90
 date: 2024-01-01T00:56:37.147Z
 tags:
-  - post
-  - news
+    - post
+    - news
+    - featured
 image: /assets/images/blog/img_0967.jpeg
 imageAlt: Claudio Celebrating
 ---
+
 In the fast-paced world of football transfers, clubs are making strategic moves to strengthen their squads. Here's a glimpse of the latest developments:
 
 ## Manchester City Secures Argentina's Young Talent
