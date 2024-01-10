@@ -246,16 +246,14 @@
     align-items: flex-start;
     column-gap: 1.25em;
   }
-  .main-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(calc(50% - 1rem), 1fr));
-    align-items: stretch;
-    column-gap: 1rem;
-  }
-  .blog-sidebar:nth-child(1) {
-    order: 0;
-  }
 }
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(50% - 1rem), 1fr));
+  align-items: stretch;
+  column-gap: 1rem;
+}
+
 /*-- -------------------------- -->
 <---    Recent Blog Articles    -->
 <--- -------------------------- -*/

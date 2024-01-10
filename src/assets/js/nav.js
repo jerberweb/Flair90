@@ -77,3 +77,39 @@ function checkURL() {
         document.getElementById("main").classList.add("black-bg");
     }
 }
+
+// Function to apply or remove classes based on screen width and URL structure
+// Toggles article grid based on section page and page number as well as screen size
+function applyClasses() {
+    // Get the current URL
+    var currentUrl = window.location.href;
+
+    // Define your sections
+    var sections = ["news", "milestones", "legends", "worldcups"];
+
+    // Select the element to apply the class
+    var contentContainer = document.querySelector(".main-content");
+
+    // Check screen width
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    // Check if the screen width is greater than or equal to 1024 pixels
+    if (screenWidth >= 1024) {
+        // Check if the URL ends with just a section or starts with section/page-number
+        if (sections.some((section) => currentUrl.endsWith("/" + section + "/")) || currentUrl.match(/\/(news|milestones|legends|worldcups)\/page-\d+/)) {
+            // Apply the class for section-only URL or section/page-number URL
+            contentContainer.classList.add("article-grid");
+        } else {
+            // If not matching the specified conditions, do nothing
+        }
+    } else {
+        // Remove the "article-grid" class if the screen width is below 1024 pixels
+        contentContainer.classList.remove("article-grid");
+    }
+}
+
+// Call the function when the DOM is loaded
+document.addEventListener("DOMContentLoaded", applyClasses);
+
+// Call the function when the window is resized
+window.addEventListener("resize", applyClasses);
