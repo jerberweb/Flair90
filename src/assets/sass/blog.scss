@@ -348,10 +348,11 @@
         .article-group {
             width: 100%;
             height: 100%;
-            background: #000000c1;
+            background: #0000009a;
             padding: clamp(30px, 5vw, 50px);
             // border: 1px solid #0c0c0c;
             border-radius: calc(8 / 16 * 1em);
+            border: 1px solid #bea800;
             z-index: 1;
         }
 
@@ -471,11 +472,9 @@
         //     opacity: 1;
         //     z-index: -1;
         // }
-        // .article-group {
-        //     z-index: 1;
-        //     background: transparent;
-        //     background: #000000c3;
-        // }
+        .article-group {
+            border: none;
+        }
     }
 }
 
