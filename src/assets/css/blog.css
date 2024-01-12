@@ -318,6 +318,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 0.75rem;
+    margin-top: 50%;
   }
   .recent-articles .blog-author,
   .recent-articles .blog-date {
@@ -341,6 +342,7 @@
     color: whitesmoke;
   }
   .recent-articles .blog-desc {
+    display: none;
     font-size: 1rem;
     line-height: 1.5em;
     margin: 1rem 0 2rem;
@@ -395,6 +397,12 @@
   }
   .recent-articles .article-group {
     border: none;
+  }
+  .recent-articles .blog-authorGroup {
+    margin-top: 0;
+  }
+  .recent-articles .blog-desc {
+    display: block;
   }
 }
 /*-- -------------------------- -->
