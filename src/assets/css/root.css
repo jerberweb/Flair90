@@ -924,12 +924,11 @@ body {
     align-items: center;
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
-    background: rgba(222, 218, 0, 0.624);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur(2.5px);
-    -webkit-backdrop-filter: blur(2.5px);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(0, 0, 0, 0.18);
   }
   #cta-51 .cs-content {
     /* set text align to left if content needs to be left aligned */
@@ -941,14 +940,14 @@ body {
     align-items: center;
   }
   #cta-51 .cs-title {
-    color: black;
-    font-family: var(--headerFont);
+    color: var(--primary);
+    font-family: var(--topperFont);
     font-style: italic;
   }
   #cta-51 .cs-text {
     font-family: var(--bodyFont);
     margin-bottom: 1rem;
-    color: black;
+    color: whitesmoke;
     opacity: 0.8;
   }
   #cta-51 .cs-text:last-of-type {
@@ -964,7 +963,7 @@ body {
   }
   .social-link svg {
     border-radius: 50%;
-    border: solid white;
+    border: solid var(--primary);
   }
   .social-link:hover {
     transform: translateY(-10px);

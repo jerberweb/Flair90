@@ -641,6 +641,9 @@
     filter: brightness(150%);
   }
   #blog-985 .cs-item:hover .cs-link {
+    color: rgb(0, 0, 0);
+  }
+  #blog-985 .cs-item .cs-link:hover {
     color: white;
     font-style: italic;
   }

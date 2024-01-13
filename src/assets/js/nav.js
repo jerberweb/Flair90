@@ -85,7 +85,7 @@ function applyClasses() {
     var currentUrl = window.location.href;
 
     // Define your sections
-    var sections = ["news", "milestones", "legends", "worldcups", "rivalries"];
+    var sections = ["news", "milestones", "legends", "worldcups", "rivalries", "forgotten-heroes", "from-the-stands"];
 
     // Select the element to apply the class
     var contentContainer = document.querySelector(".main-content");
@@ -96,7 +96,7 @@ function applyClasses() {
     // Check if the screen width is greater than or equal to 1024 pixels
     if (screenWidth >= 1024) {
         // Check if the URL ends with just a section or starts with section/page-number
-        if (sections.some((section) => currentUrl.endsWith("/" + section + "/")) || currentUrl.match(/\/(news|milestones|legends|worldcups|rivalries)\/page-\d+/)) {
+        if (sections.some((section) => currentUrl.endsWith("/" + section + "/")) || currentUrl.match(/\/(news|milestones|legends|worldcups|rivalries|forgotten-heroes|from-the-stands)\/page-\d+/)) {
             // Apply the class for section-only URL or section/page-number URL
             contentContainer.classList.add("article-grid");
         } else {

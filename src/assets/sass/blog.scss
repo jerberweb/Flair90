@@ -190,7 +190,7 @@
             font-size: calc(64 / 30 * 1rem);
             text-align: center;
             width: 96%;
-            max-width: 33.25rem;
+            max-width: 36.25rem;
             margin: 0 auto;
             margin-top: calc(70 / 16 * 1rem);
             margin-bottom: calc(30 / 16 * 1rem);
@@ -784,6 +784,7 @@
             img {
                 width: 100%;
                 height: auto;
+                max-width: 650px;
                 margin: calc(16 / 16 * 1rem) 0;
                 border-radius: calc(8 / 16 * 1rem);
                 display: block;

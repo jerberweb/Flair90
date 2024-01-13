@@ -6,6 +6,7 @@ date: 2023-06-08T15:28:08.486Z
 tags:
     - post
     - chronicles
+    - from-the-stands
     - rivalries
 image: /assets/images/blog/landing.jpg
 imageAlt: Kitchen
@@ -26,6 +27,8 @@ Fera vident; me que adfixa ama mota venabula fertur pectore totoque perculit meo
 3. Tamen in est
 4. Studiosus foret
 5. Sub facit prohibente mihi est
+
+![Local Image](/assets/images/blog/afcon.webp)
 
 ## Portibus Quirino
 
