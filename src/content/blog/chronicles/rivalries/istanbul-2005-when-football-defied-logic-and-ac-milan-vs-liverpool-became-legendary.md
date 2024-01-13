@@ -23,7 +23,7 @@ Picture this: AC Milan, the Italian juggernaut with legends like Paolo Maldini, 
 
 The whistle blows, and bam! Paolo Maldini stuns everyone with a goal in the very first minute – a Champions League record. AC Milan keeps the party going, with Hernán Crespo casually adding two more goals before halftime. By the break, they're up 3-0. The Milan fans were already practicing their victory dances.
 
-![Maldini opens the scoring](/assets/blog/maldini-2005.jpeg)
+![Maldini opens the scoring](/assets/images/blog/maldini-2005.jpeg)
 
 ## A Miracle in Red
 
