@@ -238,6 +238,7 @@
     justify-content: center;
     align-items: center;
     row-gap: 3.125em;
+    padding-top: 2rem;
   }
 }
 /* Tablet - 1024px */
@@ -318,7 +319,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 0.75rem;
-    margin-top: 50%;
+    margin-top: 30%;
   }
   .recent-articles .blog-author,
   .recent-articles .blog-date {
@@ -397,12 +398,14 @@
   }
   .recent-articles .article-group {
     border: none;
+    min-height: 400px;
   }
   .recent-articles .blog-authorGroup {
     margin-top: 0;
   }
-  .recent-articles .blog-desc {
-    display: block;
+  .recent-articles .blog-link {
+    position: absolute;
+    bottom: calc(0px + clamp(30px, 5vw, 50px));
   }
 }
 /*-- -------------------------- -->
@@ -419,6 +422,8 @@
     justify-content: center;
     align-items: center;
     row-gap: 3.125em;
+    border-radius: 0.5em;
+    border: 1px solid #ffffff;
   }
   .blog-sidebar .blog-featured-group {
     width: 100%;
@@ -535,7 +540,7 @@
 @media only screen and (min-width: 0em) {
   .blog-article {
     width: 100%;
-    max-width: 49.6875em;
+    max-width: 60em;
     display: block;
     font-family: var(--bodyFont);
     color: var(--bodyTextColorWhite);

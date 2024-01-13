@@ -5,7 +5,7 @@ preloadImg: "/assets/images/hero.webp"
 permalink: "news/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}"
 pagination:
     data: collections.news
-    size: 1
+    size: 4
     alias: pageNumber
     reverse: true
 eleventyNavigation:
@@ -54,7 +54,7 @@ eleventyNavigation:
                     <div class="blog-authorGroup">
                         <!--Author Image-->
                         <picture class="blog-author-img">
-                            <img src="/assets/svgs/profile.svg" alt="house" width="32" height="32" decoding="async" />
+                            <img src="/assets/favicons/apple-touch-icon.png" alt="house" width="32" height="32" decoding="async" />
                         </picture>
                         <span class="blog-author">{{ post.data.author }}</span>
                         <span aria-hidden="true" class="blog-dot"></span>
